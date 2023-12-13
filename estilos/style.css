@@ -1,0 +1,122 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+:root {
+  --cor-verde-escuro1: #002520;
+  --cor-verde-escuro2: #08352f;
+  --cor-verde-medio: #0f443e;
+  --cor-verde-claro2: #17544d;
+  --cor-verde-claro1: #1e635c;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: linear-gradient(
+      135deg,
+      var(--cor-verde-escuro1),
+      var(--cor-verde-escuro2),
+      var(--cor-verde-medio)
+    )
+    no-repeat;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-color: rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.header__inputBox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__inputBox > input {
+  height: 50px;
+  width: 90%;
+  margin-top: 20px;
+  padding-left: 20px;
+  color: #fff;
+  background-color: var(--cor-verde-medio);
+  border: none;
+  border-radius: 20px;
+}
+
+.header__nav {
+  padding-bottom: 10px;
+  border-bottom: 3px solid var(--cor-verde-claro2);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.header__nav button {
+  height: 50px;
+  width: 100%;
+  background-color: transparent;
+  font-size: 1.03em;
+  padding: 8px 10px;
+  color: #fff;
+  border: 1px solid transparent;
+  text-shadow: 1px 1px 1px black;
+  border-radius: 5px;
+}
+.header__nav button:active {
+  background-color: var(--cor-verde-escuro2);
+}
+/* Main */
+.main {
+  background: linear-gradient(
+      135deg,
+      var(--cor-verde-escuro1),
+      var(--cor-verde-escuro2),
+      var(--cor-verde-medio)
+    )
+    no-repeat;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.main__musicasBox {
+  height: 90%;
+  width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.main__musica{
+    height: 100px;
+    width: 90%;
+    border-radius: 10px;
+    background-color: black;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.main__btnAdionarBox {
+  height: 10%;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main__btnAdionarBox > img {
+  width: 50px;
+}
